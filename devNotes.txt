@@ -1,0 +1,35 @@
+Documento de estudos
+
+
+npm create vite@latest
+
+PS C:\Users\alber\Desktop\estudos> npm create vite@latest
+√ Project name: ... google-news-cover
+√ Select a framework: » React
+√ Select a variant: » TypeScript
+
+Scaffolding project in C:\Users\alber\Desktop\estudos\google-news-cover...
+
+Done. Now run:
+
+  cd google-news-cover
+  npm install
+  npm run dev
+
+npm i styled-components
+npm i @types/styled-components -D
+
+arquivo
+prettier.config.js
+configuração do arquivo
+
+module.exports = {
+  endOfLine: 'auto',
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  arrowParens: 'avoid',
+};
+
+para colorir o SVG 
+https://angel-rs.github.io/css-color-filter-generator/
