@@ -33,3 +33,6 @@ module.exports = {
 
 para colorir o SVG 
 https://angel-rs.github.io/css-color-filter-generator/
+
+npm install json-server -D
+"json-server": "json-server server.json -p 3333",// colocar no script do package.json
