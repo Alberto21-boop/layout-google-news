@@ -1,15 +1,13 @@
 import { Header } from '../../components/Header';
 import { CardHeader, Container, Content } from './styles';
 import { Card } from '../../components/Card';
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import arrow from '../../assets/arrow-icon.svg';
 import { News } from '../../components/News';
 import logoNews01 from '../../assets/news/logo-news-01.png';
 import news01 from '../../assets/news/news-01.png';
-import logoNews02 from '../../assets/news/logo-news-02.png';
-import news02 from '../../assets/news/news-02.png';
-import logoNews03 from '../../assets/news/logo-news-03.png';
-import news03 from '../../assets/news/news-03.png';
+import news02 from '../../assets/news/news-03.png';
+import news03 from '../../assets/news/news-01.png';
 import logoNews04 from '../../assets/news/logo-news-04.png';
 import news04 from '../../assets/news/news-04.png';
 import logoNews05 from '../../assets/news/logo-news-05.png';
@@ -63,7 +61,49 @@ export function Home() {
                   <News
                     isMain={true}
                     picture={news01}
-                    message="Jovem de 18 anos e dois irmãos são resgatados na Turquia após 8 dias"
+                    message="A minha filha Alice é uma filha incrível, fantástica, uma menininha maravilhosa que alegra o meu dia!"
+                    time="1 horas atrás"
+                    title="RD - Repórter Diário"
+                    titleLogo={logoNews01}
+                  />
+                </div>
+
+                <aside>
+                  <News
+                    message="Jovem faz festa após conseguir vender seu Mareia no WebMotors, e bairro vai a loucura 'Finalmente vendi, tentei desde a época do Orkut'"
+                    time="8 horas atrás"
+                    title="Olhar Digital"
+                    titleLogo={logoNews04}
+                  />
+
+                  <hr />
+
+                  <News
+                    message="Homem é encontrado na rua dizendo que programa HTML orientado a objeto, e comunidade cientifica diz que é verossimil"
+                    time="13 horas atrás"
+                    title="O Antagonista"
+                    titleLogo={logoNews06}
+                  />
+
+                  <hr />
+
+                  <News
+                    message="É como dizia o grande filosofo 'Rauzito' : 'Se chamarem, diga que eu sai'"
+                    time="10 horas atrás"
+                    title="Whiplash"
+                    titleLogo={logoNews05}
+                  />
+                </aside>
+              </section>
+
+              <hr />
+
+              <section>
+                <div>
+                  <News
+                    isMain={true}
+                    picture={news04}
+                    message="Aulas de etiqueta com a pequena Alice e suas bonequinhas, e hoje ela vai nos mostrar como devemos nos sentar a mesa parte 1"
                     time="10 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
@@ -72,8 +112,8 @@ export function Home() {
 
                 <aside>
                   <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
+                    message="Dicas para as crianças deste Brasil, 'quem não chora não mama' por Alice Campos"
+                    time="3 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
                   />
@@ -81,8 +121,8 @@ export function Home() {
                   <hr />
 
                   <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
+                    message="'Se a mamãe não deixa, é so pedir para o papai' Por Alice Campos "
+                    time="7 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
                   />
@@ -90,8 +130,8 @@ export function Home() {
                   <hr />
 
                   <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
+                    message="10 maneiras de pressionar os pais a comprar qualquer presente por Alice Campos"
+                    time="2 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
                   />
@@ -104,9 +144,9 @@ export function Home() {
                 <div>
                   <News
                     isMain={true}
-                    picture={news01}
-                    message="Jovem de 18 anos e dois irmãos são resgatados na Turquia após 8 dias"
-                    time="10 horas atrás"
+                    picture={news02}
+                    message="Flagrante: Homem que tira rachas nas ruas da Zona Norte alega que só faz por esporte"
+                    time="6 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
                   />
@@ -114,8 +154,8 @@ export function Home() {
 
                 <aside>
                   <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
+                    message="O lance é comprar um carro com o desconto para PCD, pegar a filha e a namorada e curtir na praia"
+                    time="6 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
                   />
@@ -123,8 +163,8 @@ export function Home() {
                   <hr />
 
                   <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
+                    message="Loira desaparecida, Beto doente, damos recompensa !"
+                    time="1 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
                   />
@@ -132,50 +172,8 @@ export function Home() {
                   <hr />
 
                   <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
-                    title="RD - Repórter Diário"
-                    titleLogo={logoNews01}
-                  />
-                </aside>
-              </section>
-
-              <hr />
-
-              <section>
-                <div>
-                  <News
-                    isMain={true}
-                    picture={news01}
-                    message="Jovem de 18 anos e dois irmãos são resgatados na Turquia após 8 dias"
-                    time="10 horas atrás"
-                    title="RD - Repórter Diário"
-                    titleLogo={logoNews01}
-                  />
-                </div>
-
-                <aside>
-                  <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
-                    title="RD - Repórter Diário"
-                    titleLogo={logoNews01}
-                  />
-
-                  <hr />
-
-                  <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
-                    title="RD - Repórter Diário"
-                    titleLogo={logoNews01}
-                  />
-
-                  <hr />
-
-                  <News
-                    message="São Bernardo lança Encontro de Mulheres Empreendedoras"
-                    time="10 horas atrás"
+                    message="O lance é chegar na gata em casa, e falar no ouvido dela : ' Gata ... vamos fazer varias loucuras hoje ? Tipo comprar umas lasanhas no OLX ?"
+                    time="9 horas atrás"
                     title="RD - Repórter Diário"
                     titleLogo={logoNews01}
                   />
