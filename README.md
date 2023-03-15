@@ -64,7 +64,7 @@ npm install json-server -D
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto, provido pela Rocketseat, através do link abaixo:
+Você pode visualizar o layout do projeto, ckicando no link a baixo e abrindo assim a pagina do GoogleNews:
 https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 MIT License
